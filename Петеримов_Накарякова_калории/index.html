@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Калькулятор калорий</title>
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="main_block container">
+    <h1 class="name">Калькулятор расчета калорий</h1>
+    <div class="age_height">
+      <div class="age_block">
+        <p>Возраст: <input type="number" id="age" class="input age" /></p>
+      </div>
+      <p>Рост: <input type="number" step="0.1" id="height" class="input height" /> см</p>
+    </div>
+    <div class="weight_sex">
+      <div class="weight_block">
+        <p>
+          Вес: <input type="number" step="0.1" id="weight" class="input weight" /> кг
+        </p>
+      </div>
+      <p>
+        Пол:
+        <select class="sex" id="sex">
+          <option value="женский">женский</option>
+          <option value="мужской">мужской</option>
+        </select>
+      </p>
+    </div>
+    <p>
+      Образ жизни:
+      <select id="lifestyle">
+        <option value="сидячий">сидячий</option>
+        <option value="небольшая активность">
+          небольшая активность
+        </option>
+        <option value="средняя активность">
+          средняя активность
+        </option>
+        <option value="высокая активность">
+          высокая активность
+        </option>
+        <option value="очень высокая активность">
+          очень высокая активность
+        </option>
+      </select>
+    </p>
+    <p>
+      Результат:
+      <input type="text" readonly id="result" class="input input_result" />
+      калорий в сутки
+    </p>
+    <div class="btn_block">
+      <input type="button" id="btn_calculate" class="btn" value="Рассчитать" />
+      <input type="button" id="btn_clear" class="btn" value="Очистить" />
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

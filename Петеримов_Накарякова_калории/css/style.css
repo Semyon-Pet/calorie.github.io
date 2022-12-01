@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font: 17px Segoe UI;
+    margin: 30px;
+}
+
+.container {
+    display: block;
+    margin: auto;
+    width: 70%;
+    max-width: 700px;
+    min-width: 360px;
+}
+
+.main_block {
+    border-width: 1px;
+    border-radius: 15px;
+    border: solid black;
+    padding: 0px 15px 15px 15px;
+}
+.name{
+    text-align: center;
+}
+.age_height{
+    display: flex;
+}
+.age_block{
+    margin-right: 50px;
+}
+.weight_block{
+    margin-right: 32px;
+}
+.weight{
+margin-left: 35px;
+}
+.sex{
+    margin-left: 2px;
+}
+.weight_sex{
+    display: flex;
+}
+.input{
+    width: 80px;
+}
+.input_result{
+    margin: 10px 0px 10px 0px;
+    background-color: #EBEBE4;
+    border-width: 0.1px;
+}
+.btn{
+    padding: 5px;
+    border-radius: 7px;
+    border-width: 0.1px;
+    width: 120px;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: #b8b7b7;
+}
+.btn_block{
+    display: flex;
+    justify-content: space-around;
+}
